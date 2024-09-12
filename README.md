@@ -1,1 +1,3 @@
 # Graph_maker
+pythonのmatplotlibを用いたグラフ作成用ライブラリ．
+yamlファイルをインプットとして読み込む．
