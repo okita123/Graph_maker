@@ -1,4 +1,5 @@
 # Graph_maker
+
 pythonのmatplotlibを用いたグラフ作成用ライブラリ．
 yamlファイルをインプットとして読み込む．
 
@@ -9,6 +10,9 @@ yamlファイルをインプットとして読み込む．
 
 - *output*
   - アウトプットとする画像ファイルの名前．
+
+- *use_tex* (true or false, default:true)
+  - latexを用いるかどうか．trueにする場合はlatexの環境が必要．
 
 - *legend*
   - 凡例．*input*と同様の記述方法であり，*input*と対応した順番である必要がある．
@@ -26,13 +30,13 @@ yamlファイルをインプットとして読み込む．
   - 用いるマーカーのタイプ．*input*と対応した順番である必要がある．デフォルトでは["o","^","s","x","D"]になっている．
 
 - *markersize*
- - プロットする点の大きさ．*input*と対応した順番である必要がある． デフォルトでは0になっており，点はプロットされない．0より大きい値に設定した場合，線に加えて点がプロットされる．点のみをプロットする場合は*linewidth*を0に設定する．
+  - プロットする点の大きさ．*input*と対応した順番である必要がある． デフォルトでは0になっており，点はプロットされない．0より大きい値に設定した場合，線に加えて点がプロットされる．点のみをプロットする場合は*linewidth*を0に設定する．
 
 - *marker_only_outline*
- - プロットする点を白抜きにするかどうか．*input*と対応した順番である必要がある． 
+  - プロットする点を白抜きにするかどうか．*input*と対応した順番である必要がある．
 
 - *marker_edge_width*
- - プロットする点の枠線の太さ．*input*と対応した順番である必要がある．
+  - プロットする点の枠線の太さ．*input*と対応した順番である必要がある．
 
 - *xlabel*
   - x軸に用いるラベル．\$\$で囲うことでtexと同様の記述が可能．ただし，通常のmatplotlibにおける場合と同様にバックスラッシュ\\は二重にする必要がある．
@@ -47,13 +51,13 @@ yamlファイルをインプットとして読み込む．
   - それぞれ，x軸，y軸ののサイズ．
 
 - *fig_sizex*, *fig_sizey*
- - それぞれ，アウトプットする画像の横と縦の長さ．
+  - それぞれ，アウトプットする画像の横と縦の長さ．
 
 - *square* (true or false, default: false)
   - グラフを正方形にするかどうか．
 
 - *xmin*, *xmax*, *ymin*, *ymax*
- - それぞれx軸，y軸の最小値，最大値．
+  - それぞれx軸，y軸の最小値，最大値．
 
 - *plot_colormesh* (true or false, default: false)
   - カラーマップを描画するかどうか．***カラーマップを描画するためのデータはgnuplotで用いられるものと同様の形式で用意する必要がある．***(examples/colormapを参照)
@@ -63,18 +67,18 @@ yamlファイルをインプットとして読み込む．
 
 - *plot_contourf* (true or false, default: false)
   - contourf(塗りつぶした等高線)を描画するかどうか．必要なデータ形式については*plot_colormesh*と同様．
- 
+
 - *contour_level*
   - contour(等高線)の本数
 
 - *contourf_level*
-  - contourfの本数 
+  - contourfの本数
 
 - *cbmin*, *cbmax*
   - カラーバーの範囲の最小値と最大値．
 
 - *cblabel*
-  - カラーバーのラベル．  
+  - カラーバーのラベル．
 
 - *xscale*, *yscale*, *cbscale* (linear or log, default: log)
-  - それぞれ，x軸，y軸，カラーバーのスケール． 
+  - それぞれ，x軸，y軸，カラーバーのスケール．
