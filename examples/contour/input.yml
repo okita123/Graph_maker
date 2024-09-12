@@ -1,0 +1,16 @@
+input: ["./test.dat"]
+xlabel: "$x$"
+ylabel: "$y$"
+cblabel: "$Z$"
+cbmax: 1.0
+cbmin: -1.0
+use_legend: False
+plot_contour: True
+plot_contourf: True
+cbar_width: 0.2
+cbar_sta: -1.0
+cbar_end:  1.0
+contour_level: 21
+contourf_level: 21
+cmap: "turbo"
+output: "./contour.pdf"

@@ -1,0 +1,15 @@
+input: ["./test.dat"]
+xlabel: "$x$"
+ylabel: "$y$"
+xmin: -2
+xmax:  2
+ymin: -2
+ymax:  2
+cblabel: "$Z$"
+cbmax:  1.0
+cbmin: -1.0
+cmap: "turbo"
+use_legend: False
+plot_colormesh: True
+plot_contour: True
+output: "./colormap.pdf"

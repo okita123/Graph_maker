@@ -1,0 +1,12 @@
+input: ["./sin.dat","./cos.dat"]
+legend: ["$\\sin(x)$","$\\cos(x)$"]
+color: ["black","red"]
+legend_size: 12
+linewidth: [3,3]
+xlabel: "$x$"
+xlabel_size: 24
+ylabel: "$y$"
+ylabel_size: 24
+xticks_size: 16
+yticks_size: 16
+output: "sin_and_cos.pdf"
