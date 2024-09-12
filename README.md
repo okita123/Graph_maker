@@ -77,4 +77,4 @@ yamlファイルをインプットとして読み込む．
   - カラーバーのラベル．  
 
 - *xscale*, *yscale*, *cbscale* (linear or log, default: log)
- - それぞれ，x軸，y軸，カラーバーのスケール． 
+  - それぞれ，x軸，y軸，カラーバーのスケール． 
